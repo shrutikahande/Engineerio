@@ -1,1 +1,49 @@
-Assignment for GoScale
+Answer 1 :
+Bottom up integration testing starts with the integration of the lowest modules.
+In this case the drivers are used for the upper modules so that testing happens. When the codes for the upper modules are developed 
+the drivers are replaced with the actual module.
+Advantages :
+1. Test conditions are very to define
+2. Starting from the botton ensure that the major defects are captured early
+3. if the low level mdoules and their related functions are refer by other modules then it is beneficial to test them first.
+
+Disadvantages :
+1. Tester has to wait until the last module is added.
+2. In this approach all the low level modules need to be developed first so that effective testing happens.
+3. Drivers also needs to be developed which ofen end up in consuming time.
+
+Answer 2 :
+Modules to be tested in terms of priority:
+Language : Main page should be displayed in User signed in language. Correct currency type as per the regoin should be displayed.
+Billing and Payment module : Billing methods like COD, Credit card , debit cart, UPI, Gift voucher , coupon code etc should be tested
+Main page : All the tabs and menu options like (Sign in, Shop now, Cart) are displayed correctly and according to requirements and design
+(All the pages should be tested)
+Sign In: User sign In is successful. The User account information(billing address and other user details) is displayed correctly.
+Orders, Wishlist  : User Order page should reflect correct details and valid history.  Wishlist should display correct details
+Items : Items are displayed according to correct category and perferences and popularity and user's wishlist. 
+Main page contains various sections like Today's deals etc.
+Cart module : User should be able to add, delete, modify the items in the cart.  Discounts or voucher or coupon code features 
+should be tested
+Order booking: Order is booked correctly and updated after the shipment.
+Post -order placement :Tracking order until recieved.
+Cancellation: Cancel order before recieve and process refund.
+RE-placement : Replacing or requesting a refund
+
+
+Answer 3 :
+Yes I have performed API testing using SOAP UI. 
+API are RESTful and SOAP
+Following are the steps in testing an API:
+1. The URI path should be specified in the URI edi box.
+2. Click Run button to get the response. The response should be in JSON or XML
+3. Create new Test case and create assertion statement to verify the output.
+
+
+API test availability: 
+For the test case  API should be declared at the start
+We need to set up the test environment with certain set of parameters.
+Lastly the function calls to API needs to prioritize
+
+404 Error is related to missing webpage or URL.
+503 error response is displayed when there is no reponse from SERVER. This might be due to SERVER not able to process the request.
+(Due to maintainence or overloading)
